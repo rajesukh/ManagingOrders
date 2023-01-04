@@ -1,7 +1,5 @@
 const { default: mongoose } = require("mongoose")
-const congoose = require("mongoose")
 const objectId = mongoose.Schema.Types.ObjectId
-
 const orderSchema= new mongoose.Schema({
 
     customerId:{
@@ -16,8 +14,12 @@ const orderSchema= new mongoose.Schema({
         type:Number,
 
     },
-    orderId:{
+    totalOrder:{
         type:Number
+    },
+    discount:{
+        type:Number,
+        default:0
     }
 },{timestamps:true})
 

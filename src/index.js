@@ -8,10 +8,10 @@ app.use(express.json())
 app.use("/", route)
 
 
-// const url = "mongodb+srv://Rajesh11:Lvxlixhd2m5OOHIg@cluster0.j5omh.mongodb.net/orderManagement"
-// mongoose.connect(url, {useNewUrlParser:true})
-// .then(()=>console.log("MongoDB is connected"))
-// .catch((err)=> console.log(err.message))
+const url = "mongodb+srv://Rajesh11:Lvxlixhd2m5OOHIg@cluster0.j5omh.mongodb.net/orderManagement"
+mongoose.connect(url, {useNewUrlParser:true})
+.then(()=>console.log("MongoDB is connected"))
+.catch((err)=> console.log(err.message))
 
 const port = process.env.PORT || 3000
 
